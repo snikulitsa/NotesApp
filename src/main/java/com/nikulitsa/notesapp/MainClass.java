@@ -1,8 +1,8 @@
-package com.paytravel.app;
+package com.nikulitsa.notesapp;
 
-import com.paytravel.app.datamodel.Note;
-import com.paytravel.app.javafxfolder.AddNoteWindowController;
-import com.paytravel.app.javafxfolder.ConnectToDatabaseWindowController;
+import com.nikulitsa.notesapp.datamodel.Note;
+import com.nikulitsa.notesapp.javafxfolder.AddNoteWindowController;
+import com.nikulitsa.notesapp.javafxfolder.ConnectToDatabaseWindowController;
 import javafx.application.Application;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
@@ -153,8 +153,9 @@ public class MainClass extends Application{
         alert.setHeaderText("Автор: Сергей Анатольевич Никулица");
         alert.setContentText("Приложение - Блокнот для заметок.\n" +
                 "Заметки хранятся в базе данных MySQL (тестировалось с версией 5.7).\n" +
-                "БД: paytravel, таблица (захардкожена): notes. Поля таблицы строковые: noteText, noteDate" +
-                "Если на момент добавления заметки БД будет недоступна, приложение ведет себя ОЧЕНЬ некрасиво :)");
+                "БД: paytravel, таблица (захардкожена): notes. Поля таблицы строковые: noteText, noteDate.\n" +
+                "Если на момент добавления заметки БД будет недоступна," +
+                " приложение выдаст критическую ошибку и потребуется перезапуск.");
 
         alert.showAndWait();
     }

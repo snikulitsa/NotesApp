@@ -1,4 +1,4 @@
-package com.paytravel.app.datamodel;
+package com.nikulitsa.notesapp.datamodel;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;

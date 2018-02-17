@@ -1,6 +1,6 @@
-package com.paytravel.app.processing;
+package com.nikulitsa.notesapp.processing;
 
-import com.paytravel.app.MainClass;
+import com.nikulitsa.notesapp.MainClass;
 import javafx.application.Platform;
 
 import java.sql.Connection;

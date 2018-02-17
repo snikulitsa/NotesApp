@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="NotesApp" />
         <module name="NotesApplication" />
         <module name="PaytravelApplication" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="NotesApp" target="1.8" />
       <module name="NotesApplication" target="1.8" />
       <module name="PaytravelApplication" target="1.8" />
     </bytecodeTargetLevel>

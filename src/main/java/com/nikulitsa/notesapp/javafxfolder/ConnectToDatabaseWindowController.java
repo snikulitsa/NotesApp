@@ -1,7 +1,7 @@
-package com.paytravel.app.javafxfolder;
+package com.nikulitsa.notesapp.javafxfolder;
 
-import com.paytravel.app.MainClass;
-import com.paytravel.app.datamodel.Note;
+import com.nikulitsa.notesapp.MainClass;
+import com.nikulitsa.notesapp.datamodel.Note;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
