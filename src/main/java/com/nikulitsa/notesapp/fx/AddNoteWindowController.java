@@ -1,4 +1,4 @@
-package com.nikulitsa.notesapp.javafxfolder;
+package com.nikulitsa.notesapp.fx;
 
 import com.nikulitsa.notesapp.MainClass;
 import com.nikulitsa.notesapp.datamodel.Note;

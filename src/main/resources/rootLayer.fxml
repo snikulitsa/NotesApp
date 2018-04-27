@@ -16,7 +16,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="Меню">
             <items>
-                  <MenuItem mnemonicParsing="false" onAction="#loadNotesFromDatabaseHandler" text="Подключиться к базе данных" />
+                  <MenuItem mnemonicParsing="false" onAction="#connectToDatabaseHandler" text="Подключиться к базе данных" />
               <MenuItem mnemonicParsing="false" onAction="#exitHandler" text="Выход" />
             </items>
           </Menu>

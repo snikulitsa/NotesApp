@@ -31,11 +31,6 @@ public class DataBaseSaverRunnable implements Runnable{
         MainApp = mainApp;
     }
 
-    public DataBaseSaverRunnable(){
-        this.noteText=null;
-        this.noteTime=null;
-    }
-
     public DataBaseSaverRunnable(String noteText, LocalDateTime noteTime){
         this.noteText=noteText;
         this.noteTime=noteTime;

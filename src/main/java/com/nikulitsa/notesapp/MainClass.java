@@ -1,8 +1,8 @@
 package com.nikulitsa.notesapp;
 
 import com.nikulitsa.notesapp.datamodel.Note;
-import com.nikulitsa.notesapp.javafxfolder.AddNoteWindowController;
-import com.nikulitsa.notesapp.javafxfolder.ConnectToDatabaseWindowController;
+import com.nikulitsa.notesapp.fx.AddNoteWindowController;
+import com.nikulitsa.notesapp.fx.ConnectToDatabaseWindowController;
 import javafx.application.Application;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
@@ -18,7 +18,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.IOException;
-import java.sql.*;
+import java.sql.Connection;
 import java.time.format.DateTimeFormatter;
 
 public class MainClass extends Application{
@@ -79,7 +79,7 @@ public class MainClass extends Application{
     private void initRootLayer(){
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainClass.class.getResource("javafxfolder/rootLayer.fxml"));
+            loader.setLocation(getClass().getResource("/rootLayer.fxml"));
             BorderPane rootLayer = loader.load();
             Scene scene = new Scene(rootLayer);
             rootStage.setScene(scene);
@@ -95,7 +95,7 @@ public class MainClass extends Application{
     private void addNoteHandler(){
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainClass.class.getResource("javafxfolder/addNoteWindow.fxml"));
+            loader.setLocation(getClass().getResource("/addNoteWindow.fxml"));
             AnchorPane addNoteAnchorPane = loader.load();
 
             Stage addNoteStage = new Stage();
@@ -117,10 +117,10 @@ public class MainClass extends Application{
     }
 
     @FXML
-    private void loadNotesFromDatabaseHandler(){
+    private void connectToDatabaseHandler(){
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainClass.class.getResource("javafxfolder/connectToDatabaseWindow.fxml"));
+            loader.setLocation(getClass().getResource("/connectToDatabaseWindow.fxml"));
             AnchorPane pane = loader.load();
 
             Stage dialogStage = new Stage();
